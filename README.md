@@ -1,6 +1,6 @@
 # SenseWeather
 ![GitHub](https://img.shields.io/github/license/42ip/SenseWeather?style=plastic)
-![GitHub](https://img.shields.io/badge/Awesome-Flutter-blue)
+![GitHub](https://img.shields.io/badge/Awesome-Flutter-blue?style=plastic)
 
 
 
