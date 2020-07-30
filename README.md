@@ -1,4 +1,4 @@
-# weatherApp
+# SenseWeather
 
-A new Flutter project.
+A basic weather app 
 
