@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#010101" d="M11.651,13.87C11.651,13.87,11.651,13.87,11.651,13.87c-0.574,0-1.148-0.138-1.662-0.399    c-0.502-0.267-0.922-0.613-1.223-1.003c-0.086-0.111-0.097-0.262-0.028-0.385c0.068-0.122,0.201-0.188,0.344-0.177    c1.195,0.135,2.348-0.496,2.907-1.567c0.53-1.01,0.41-2.261-0.306-3.187c-0.085-0.109-0.098-0.258-0.032-0.38    c0.065-0.122,0.178-0.194,0.334-0.184c0.414,0.03,0.881,0.169,1.35,0.404c1.774,0.932,2.477,3.134,1.571,4.911    C14.267,13.119,13.02,13.87,11.651,13.87z M9.896,12.589c0.13,0.095,0.27,0.183,0.417,0.262c0.415,0.211,0.868,0.319,1.339,0.319    c1.108,0,2.117-0.608,2.634-1.587c0.729-1.433,0.161-3.215-1.27-3.967c-0.11-0.055-0.222-0.104-0.33-0.146    c0.461,1.017,0.446,2.199-0.076,3.195C12.057,11.722,11.045,12.429,9.896,12.589z"/>
+	</g>
+	<g>
+		<path fill="#010101" d="M14.878,15.884H9.61c-0.193,0-0.35-0.157-0.35-0.35s0.156-0.35,0.35-0.35h5.268    c0.193,0,0.35,0.157,0.35,0.35S15.071,15.884,14.878,15.884z"/>
+	</g>
+	<g>
+		<path fill="#010101" d="M13.519,17.412H10.97c-0.193,0-0.35-0.157-0.35-0.35s0.156-0.35,0.35-0.35h2.549    c0.193,0,0.35,0.157,0.35,0.35S13.712,17.412,13.519,17.412z"/>
+	</g>
+</g>
+
+	
+	
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="Moon, Moonset, Weather, Sea, Nature, Atmosphear, Natural" dc:description="Moon, Moonset, Weather, Sea, Nature, Atmosphear, Natural" dc:publisher="Iconscout" dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Chamestudio</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>
