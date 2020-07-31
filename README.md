@@ -13,7 +13,9 @@ A Flutter application which gives you the **current weather status** in the resp
 - Dart
 - Get an OpenWeatherMap API key from [here](https://openweathermap.org/api).
 - flutter pub get 
-- replace the app-id here with your api key ``` response = await http.get('http://api.openweathermap.org/data/2.5/weather?q=$value&units=metric&appid=your-app-id'); ```
+- replace the app-id here with your api key 
+
+```http://api.openweathermap.org/data/2.5/weather?q=$value&units=metric&appid=your-app-id'```
 
 ### Installation
 
