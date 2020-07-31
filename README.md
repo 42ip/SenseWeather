@@ -17,6 +17,9 @@ A Flutter application which gives you the **current weather status** in the resp
 
 ```http://api.openweathermap.org/data/2.5/weather?q=$value&units=metric&appid=your-app-id'```
 
+#### Preview 
+![image](assets/giphy1.gif)
+
 ### Installation
 
 - Get this application from [releases](https://github.com/42ip/SenseWeather/releases/tag/v1).
