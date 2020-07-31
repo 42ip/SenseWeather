@@ -15,7 +15,7 @@ class _LoadingState extends State<Loading> {
         await DefaultAssetBundle.of(context).loadString('assets/city.json'));
     List<City> citylist = parseJosn(parsed);
     Navigator.pushReplacementNamed(context, '/home',
-        arguments: {'citylist': citylist});
+        arguments: {'citylist': citylist}); //going to implement this in v2
   }
 
   @override
@@ -35,7 +35,7 @@ class _LoadingState extends State<Loading> {
               Image.asset('assets/SenseWeather.png'),
               SpinKitDoubleBounce(
                 color: Colors.white,
-                size: 35.0,
+                size: 50.0,
               )
             ],
           ),

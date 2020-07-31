@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:weatherApp/pages/loading.dart';
-import 'home.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 import 'package:flutter_icons/flutter_icons.dart';
 
 class Display extends StatefulWidget {
@@ -88,87 +84,130 @@ class _DisplayState extends State<Display> {
               child: ListView(
                 children: [
                   ListTile(
-                    leading: Icon(FontAwesome.thermometer_three_quarters,
-                      color: Colors.white,),
+                    leading: Icon(
+                      FontAwesome.thermometer_three_quarters,
+                      color: Colors.white,
+                    ),
                     trailing: Text(
-                      temp != null ? temp.toString() + '\u00B0' + "/" + feelslike.toString() + '\u00B0' + ' C': "Loading",
+                      temp != null
+                          ? temp.toString() +
+                              '\u00B0' +
+                              "/" +
+                              feelslike.toString() +
+                              '\u00B0' +
+                              ' C'
+                          : "Loading",
                       style: TextStyle(
                         color: Colors.white,
                       ),
-                        ),
-                    title: Text("Temp/Feels like",
-                      style: TextStyle(
-                        color:Colors.white,
-                      ),),
-                  ),
-                  ListTile(
-                    leading: Icon(FontAwesome.thermometer_three_quarters,
-                      color: Colors.white,),
-                    trailing: Text(
-                        tempmin != null ? tempmin.toString() + '\u00B0'+  "/" + tempmax.toString() + '\u00B0' + '  C': "Loading",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
                     ),
-                    title: Text("Lo/Hi",
+                    title: Text(
+                      "Temp/Feels like",
                       style: TextStyle(
-                        color:Colors.white,
-                      ),),
-                  ),
-                  ListTile(
-                    leading: Icon(FontAwesome.sun_o,
-                      color: Colors.white,),
-                    trailing: Text(
-                        humidity != null ? humidity.toString() + "%" : "Loading",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
+                        color: Colors.white,
+                      ),
                     ),
-                    title: Text('Humidity',
-                      style: TextStyle(
-                        color:Colors.white,
-                      ),),
                   ),
                   ListTile(
-                    leading: Icon(FontAwesome.cloud,
-                      color: Colors.white,),
+                    leading: Icon(
+                      FontAwesome.thermometer_three_quarters,
+                      color: Colors.white,
+                    ),
+                    trailing: Text(
+                      tempmin != null
+                          ? tempmin.toString() +
+                              '\u00B0' +
+                              "/" +
+                              tempmax.toString() +
+                              '\u00B0' +
+                              '  C'
+                          : "Loading",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    title: Text(
+                      "Lo/Hi",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      FontAwesome.sun_o,
+                      color: Colors.white,
+                    ),
+                    trailing: Text(
+                      humidity != null ? humidity.toString() + "%" : "Loading",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    title: Text(
+                      'Humidity',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      FontAwesome.cloud,
+                      color: Colors.white,
+                    ),
                     trailing: Text(
                       description != null ? description.toString() : "Loading",
                       style: TextStyle(
-                        color:Colors.white,
+                        color: Colors.white,
                       ),
                     ),
-                    title: Text("Weather",
-                      style: TextStyle(
-                      color:Colors.white,
-                    ),),
-                  ),
-                  ListTile(
-                    leading: Icon(FontAwesome.compress,
-                      color: Colors.white,),
-                    trailing: Text(
-                        pressure != null ? pressure.toString() + " bar" : "Loading",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                    ),
-                    title: Text("Pressure",
-                      style: TextStyle(
-                      color:Colors.white,
-                    ),
-                  ),),
-                  ListTile(
-                    leading: Icon(FontAwesome.low_vision,
-                      color: Colors.white,),
-                    trailing: Text(
-                      visibility != null ? visibility.toString() + " km" : "Loading",
+                    title: Text(
+                      "Weather",
                       style: TextStyle(
                         color: Colors.white,
-                      ),),
-                    title: Text("Visibility",
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      FontAwesome.compress,
+                      color: Colors.white,
+                    ),
+                    trailing: Text(
+                      pressure != null
+                          ? pressure.toString() + " bar"
+                          : "Loading",
                       style: TextStyle(
-                      color:Colors.white,
-                    ),),
+                        color: Colors.white,
+                      ),
+                    ),
+                    title: Text(
+                      "Pressure",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    leading: Icon(
+                      FontAwesome.low_vision,
+                      color: Colors.white,
+                    ),
+                    trailing: Text(
+                      visibility != null
+                          ? visibility.toString() + " km"
+                          : "Loading",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    title: Text(
+                      "Visibility",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ],
               ),
