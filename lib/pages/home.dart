@@ -68,21 +68,29 @@ class _HomeState extends State<Home> {
             ),
             FlatButton.icon(
               onPressed: () async {
-                Container(
-                  child: Text('doing it '),
-                );
                 value = myController.text;
                 print(value);
                 response = await http.get(
                     'http://api.openweathermap.org/data/2.5/weather?q=$value&units=metric&appid=your-app-id');
                 datanew = jsonDecode(response.body);
-                Navigator.pushNamed(
-                  context,
-                  '/display',
-                  arguments: {
-                    'datanew': datanew,
-                  },
-                );
+                print(datanew['cod']);
+
+                // I guess the guy who wrote the api is satan
+                //I literally sat for 15 minutes trying to figure out why datanew['cod'] == 404 is returning false
+                //turns out 404 is string and 401 is integer
+                if ((datanew['cod'] == 401) || (datanew['cod'] == "404")) {
+                  Navigator.pushReplacementNamed(
+                    context,
+                    '/error',
+                  );
+                } else
+                  Navigator.pushNamed(
+                    context,
+                    '/display',
+                    arguments: {
+                      'datanew': datanew,
+                    },
+                  );
               },
               icon: Icon(
                 Icons.search,
