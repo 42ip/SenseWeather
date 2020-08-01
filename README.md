@@ -22,5 +22,5 @@ A Flutter application which gives you the **current weather status** in the resp
 
 ### Installation
 
-- Get this application from [releases](https://github.com/42ip/SenseWeather/releases/tag/v1).
+- Get this application from [releases](https://github.com/42ip/SenseWeather/releases/).
 
