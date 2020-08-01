@@ -70,8 +70,16 @@ class _HomeState extends State<Home> {
               onPressed: () async {
                 value = myController.text;
                 print(value);
-                response = await http.get(
-                    'http://api.openweathermap.org/data/2.5/weather?q=$value&units=metric&appid=your-app-id');
+                try {
+                  response = await http.get(
+                      'http://api.openweathermap.org/data/2.5/weather?q=$value&units=metric&appid=your-app-id');
+                } catch (e) {
+                  print(e.toString());
+                  Navigator.pushReplacementNamed(
+                    context,
+                    '/error',
+                  );
+                }
                 datanew = jsonDecode(response.body);
                 print(datanew['cod']);
 
