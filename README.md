@@ -20,6 +20,13 @@ A Flutter application which gives you the **current weather status** in the resp
 #### Preview 
 ![image](assets/giphy1.gif)
 
+### TODO list
+
+- [ ] Modifying the User Interface
+- [ ] Implementing Animations
+- [ ] Adding more features
+
+
 ### Installation
 
 - Get this application from [releases](https://github.com/42ip/SenseWeather/releases/).
