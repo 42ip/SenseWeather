@@ -46,17 +46,19 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.fromLTRB(10, 125, 10, 15),
+              padding: EdgeInsets.fromLTRB(10, 200, 10, 15),
               child: TextFormField(
                 controller: myController,
                 textCapitalization: TextCapitalization.sentences,
                 cursorColor: Colors.white,
                 decoration: InputDecoration(
+                  fillColor: Colors.grey[400],
+                  filled: true,
                   enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white),
+                    borderSide: BorderSide(color: Colors.white, width: 2.0),
                   ),
                   focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white),
+                    borderSide: BorderSide(color: Colors.pink, width: 2.0),
                   ),
                   hintText: "<Your location>",
                   hoverColor: Colors.white,
@@ -72,7 +74,7 @@ class _HomeState extends State<Home> {
                 print(value);
                 try {
                   response = await http.get(
-                      'http://api.openweathermap.org/data/2.5/weather?q=$value&units=metric&appid=your-app-id');
+                      'http://api.openweathermap.org/data/2.5/weather?q=$value&units=metric&appid=ba6dad68c2e39e80508bf452a46b1bff');
                 } catch (e) {
                   print(e.toString());
                   Navigator.pushReplacementNamed(
